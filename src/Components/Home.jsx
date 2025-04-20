@@ -87,7 +87,7 @@ const Home = () => {
               <button
                 key={i}
                 onClick={() => handleOptionClick(opt)}
-                className="bg-orange-100 hover:bg-orange-200 p-3 rounded-xl text-left border border-orange-300"
+                className="bg-orange-100 hover:bg-orange-200 p-3 rounded-xl text-left border border-orange-300 cursor-pointer"
               >
                 {opt}
               </button>
@@ -104,7 +104,7 @@ const Home = () => {
             <p className="text-lg">❌ Wrong Answers: {wrong}</p>
             <p className="text-lg font-semibold mt-2">🏆 Your Score: {score * 2} points</p>
             <button
-              className="mt-4 px-6 py-2 bg-orange-500 text-white rounded-xl hover:bg-orange-600"
+              className="mt-4 px-6 py-2 bg-orange-500 text-white rounded-xl hover:bg-orange-600 cursor-pointer"
               onClick={() => setShowResult(false)}
             >
               Close
